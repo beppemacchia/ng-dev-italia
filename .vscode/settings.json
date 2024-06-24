@@ -1,0 +1,15 @@
+{
+  "i18n-ally.localesPaths": [
+    "public/i18n",
+    "node_modules/design-angular-kit/assets/i18n"
+  ],
+  "angular-schematics.schematicsDefaultOptions": {
+    "angular-*": {
+      "style": "scss",
+      "externalTemplate": true
+    },
+    "angular-component": {
+      "skipDisplayBlock": true
+    }
+  }
+}

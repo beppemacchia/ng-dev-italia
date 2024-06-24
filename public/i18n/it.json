@@ -1,0 +1,25 @@
+{
+  "commons": {
+    "yes": "Sì",
+    "no": "No"
+  },
+  "demo": {
+    "membership_organization": "Ente di appartenenza",
+    "organization_name": "Nome dell'Istituzione",
+    "organization_tag_line": "Tag line dell'Istituzione",
+    "link": "Link",
+    "list": "Lista",
+    "active": "(attivo)",
+    "disabled": "(disabilitato)",
+    "follow_on": "Seguici su",
+    "megamenu": {
+      "text_1": "Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu 1</strong>.",
+      "explore": "Esplora la sezione megamenu 1"
+    },
+    "useful_links": "Sezione Link Utili",
+    "media_policy": "Media policy",
+    "legal_notices": "Note legali",
+    "privacy_policy": "Privacy policy",
+    "sitemap": "Mappa del sito"
+  }
+}

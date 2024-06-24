@@ -1,0 +1,25 @@
+{
+  "commons": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "demo": {
+    "membership_organization": "Membership organization",
+    "organization_name": "Organization name",
+    "organization_tag_line": "Organization tag line",
+    "link": "Link",
+    "list": "List",
+    "active": "(active)",
+    "disabled": "(disabled)",
+    "follow_on": "Follow us on",
+    "megamenu": {
+      "text_1": "Useful text to provide a description of the contents of the <strong>megamenu 1</strong> section.",
+      "explore": "Explore the <strong>megamenu 1</strong> section"
+    },
+    "useful_links": "Useful Links Section",
+    "media_policy": "Media policy",
+    "legal_notices": "Legal notices",
+    "privacy_policy": "Privacy policy",
+    "sitemap": "Site map"
+  }
+}

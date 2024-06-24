@@ -1,0 +1,195 @@
+<it-header
+  [slimTitle]="'demo.membership_organization' | translate"
+  slimTitleLink="https://italia.github.io/design-angular-kit"
+  [loginStyle]="'none'"
+  [light]="false"
+  [showSearch]="false"
+  [sticky]="false"
+  [megamenu]="true">
+  <ul class="link-list" slimLinkList>
+    <li>
+      <a class="dropdown-item list-item" href="#">{{ 'demo.link' | translate }} 1</a>
+    </li>
+    <li>
+      <a class="list-item active" href="#" aria-current="page"
+        >{{ 'demo.link' | translate }} 2 {{ 'demo.active' | translate }}</a
+      >
+    </li>
+  </ul>
+  <ng-container slimRightZone>
+    <it-language-switcher mode="nav"></it-language-switcher>
+  </ng-container>
+  <ng-container brand>
+    <a href="#">
+      <it-icon name="pa"></it-icon>
+      <div class="it-brand-text">
+        <div class="it-brand-title">{{ 'demo.organization_name' | translate }}</div>
+        <div class="it-brand-tagline d-none d-md-block">{{ 'demo.organization_tag_line' | translate }}</div>
+      </div>
+    </a>
+  </ng-container>
+  <div class="it-socials d-none d-md-flex" rightZone>
+    <span>{{ 'demo.follow_on' | translate }}</span>
+    <ul>
+      <li>
+        <a href="#" aria-label="Facebook" target="_blank">
+          <it-icon name="facebook"></it-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Github" target="_blank">
+          <it-icon name="github"></it-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Twitter" target="_blank">
+          <it-icon name="twitter"></it-icon>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <ng-container navItems>
+    <it-navbar-item
+      ><a class="nav-link active" href="#" aria-current="page"
+        ><span>{{ 'demo.link' | translate }} 1 {{ 'demo.active' | translate }}</span></a
+      ></it-navbar-item
+    >
+    <it-navbar-item
+      ><a class="nav-link disabled" href="#" aria-disabled="true"
+        ><span>{{ 'demo.link' | translate }} 2 {{ 'demo.disabled' | translate }}</span></a
+      ></it-navbar-item
+    >
+    <it-navbar-item
+      ><a class="nav-link" href="#"
+        ><span>{{ 'demo.link' | translate }} 3</span></a
+      ></it-navbar-item
+    >
+    <it-navbar-item
+      ><a class="nav-link" href="#"
+        ><span>{{ 'demo.link' | translate }} 4</span></a
+      ></it-navbar-item
+    >
+    <it-navbar-item>
+      <it-dropdown mode="nav">
+        <span button>Menu dropdown</span>
+        <ng-container list>
+          <it-dropdown-item>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 1</it-dropdown-item>
+          <it-dropdown-item>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 2</it-dropdown-item>
+        </ng-container>
+      </it-dropdown>
+    </it-navbar-item>
+    <it-navbar-item>
+      <it-dropdown mode="nav" [megamenu]="true">
+        <span button>Megamenu</span>
+        <ng-container list>
+          <it-megamenu [header]="true" [mode]="'left-section'">
+            <ng-container megamenuLeftZone>
+              <div class="ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded">
+                <figure class="figure">
+                  <img
+                    src="https://via.placeholder.com/560x240/ebebeb/808080/?text=Immagine"
+                    class="figure-img img-fluid rounded"
+                    alt="Segnaposto" />
+                </figure>
+              </div>
+              <p [innerHTML]="'demo.megamenu.text_1' | translate"></p>
+            </ng-container>
+            <ng-container megamenuHeadingLink>
+              <a class="it-heading-link" href="#"
+                ><it-icon name="arrow-right-triangle"></it-icon>
+                <span>{{ 'demo.megamenu.explore' | translate }}</span>
+              </a>
+            </ng-container>
+            <ng-container megamenuLinkList>
+              <div class="col-12 col-lg-6">
+                <it-list linkList="true">
+                  <it-list-item href="#" externalLink="true">
+                    <it-icon name="arrow-right-triangle"></it-icon>
+                    <span>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 1</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <it-icon name="arrow-right-triangle"></it-icon>
+                    <span>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 2</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <it-icon name="arrow-right-triangle"></it-icon>
+                    <span>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }}3</span>
+                  </it-list-item>
+                </it-list>
+              </div>
+              <div class="col-12 col-lg-6">
+                <it-list linkList="true">
+                  <it-list-item href="#" externalLink="true">
+                    <it-icon name="arrow-right-triangle"></it-icon>
+                    <span>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 4</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <it-icon name="arrow-right-triangle"></it-icon>
+                    <span>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 5</span>
+                  </it-list-item>
+                  <it-list-item href="#" externalLink="true">
+                    <it-icon name="arrow-right-triangle"></it-icon>
+                    <span>{{ 'demo.link' | translate }} {{ 'demo.list' | translate }} 6</span>
+                  </it-list-item>
+                </it-list>
+              </div>
+            </ng-container>
+          </it-megamenu>
+        </ng-container>
+      </it-dropdown>
+    </it-navbar-item>
+  </ng-container>
+</it-header>
+
+<div class="container my-4">
+  <h1>Lorem Ipsum</h1>
+  <p>
+    Ab illo tempore, ab est sed immemorabili.<br />
+    Ullamco laboris nisi ut aliquid ex ea commodi consequat.<br />
+    Quis aute iure reprehenderit in voluptate velit esse.<br />
+    Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+  </p>
+  <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+</div>
+
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section>
+        <div class="row clearfix">
+          <div class="col-sm-12">
+            <div class="it-brand-wrapper">
+              <a href="#">
+                <it-icon name="pa"></it-icon>
+                <div class="it-brand-text">
+                  <h2 class="no_toc">{{ 'demo.organization_name' | translate }}</h2>
+                  <h3 class="no_toc d-none d-md-block">{{ 'demo.organization_tag_line' | translate }}</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <h3 class="visually-hidden">{{ 'demo.useful_links' | translate }}</h3>
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        <li class="list-inline-item">
+          <a href="#" [title]="'demo.media_policy' | translate">{{ 'demo.media_policy' | translate }}</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" [title]="'demo.legal_notices' | translate">{{ 'demo.legal_notices' | translate }}</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" [title]="'demo.privacy_policy' | translate">{{ 'demo.privacy_policy' | translate }}</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" [title]="'demo.sitemap' | translate">{{ 'demo.sitemap' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
